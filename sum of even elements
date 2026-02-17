@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int sum=0;
+        int a[]=new int[10];
+        for(int i=1;i<=n;i++)
+        {
+            a[i]=s.nextInt();
+            if(a[i]%2==0){
+                sum=sum+a[i];
+            }
+            }
+        System.out.println(sum);
+    }
+        }
