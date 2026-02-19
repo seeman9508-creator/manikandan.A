@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class PalindromeCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+
+        
+        String numStr = Integer.toString(N);
+
+        
+        String reversed = new StringBuilder(numStr).reverse().toString();
+
+        
+        if (numStr.equals(reversed)) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
+        }
+
+        sc.close();
+    }
+}
