@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Solution {
+    void reverse(int num){
+        int reverse = 0;
+         while (num != 0) {
+            int digit = num % 10;       
+            reverse = reverse * 10 + digit; 
+            num = num / 10;
+        }
+
+        System.out.println(reverse);
+        
+        
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Solution  ob=new Solution ();
+        int num = sc.nextInt();
+        
+        ob.reverse(num);
+        
+        
+
+       
+    }
+}
